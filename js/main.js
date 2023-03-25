@@ -19,3 +19,21 @@ function numberOfChars(str, maxLength) {
 }
 
 numberOfChars('Я люлбю jsasdasddas', 20);
+
+function arrayOfPictures() {
+  let resultArray = new Array(25);
+  for (let i = 0; i < resultArray.length; i++) {
+      resultArray.push(
+        {
+            id: i + 1,
+            url: "photos/" + i+1 + ".png",
+            description:"море",
+            likes: random(15,200),
+            comments: random(0, 200)
+        }
+      );
+  };
+  return resultArray;
+}
+
+arrayOfPictures();
