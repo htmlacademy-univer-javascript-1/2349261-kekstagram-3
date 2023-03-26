@@ -16,3 +16,5 @@ function numberOfChars(str, maxLength) {
     return false;
   }
 }
+
+export {random, numberOfChars}
