@@ -17,4 +17,6 @@ function numberOfChars(str, maxLength) {
   }
 }
 
-export {random, numberOfChars}
+numberOfChars('I love js dasdadadad', 21);
+
+export {random, numberOfChars};
