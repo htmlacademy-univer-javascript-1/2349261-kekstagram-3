@@ -1,5 +1,5 @@
-import {random, numberOfChars} from './logic.js';
-import './data.js'
+import {random} from './logic.js';
+import './data.js';
 
 function arrayOfPhotos() {
   const resultArray = new Array(25);
