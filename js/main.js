@@ -1,5 +1,6 @@
 import {random} from './logic.js';
 import './data.js';
+export { arrayOfPhotos };
 
 function arrayOfPhotos() {
   const resultArray = new Array(25);
@@ -16,5 +17,3 @@ function arrayOfPhotos() {
   }
   return resultArray;
 }
-
-arrayOfPhotos();
