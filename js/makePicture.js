@@ -1,4 +1,4 @@
-import { arrayOfPhotos } from './main.js';
+import { arrayOfPhotos } from './data.js';
 
 
 const miniaturesFragment = document.createDocumentFragment();
