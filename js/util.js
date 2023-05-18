@@ -17,6 +17,12 @@ function numberOfChars(str, maxLength) {
   }
 }
 
-numberOfChars('I love js dasdadadad', 21);
+const isEsc = function (evt){
+  return evt.key === 'Escape';
+};
 
-export {random, numberOfChars};
+export{
+  random,
+  numberOfChars,
+  isEsc
+};
