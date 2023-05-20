@@ -1,8 +1,12 @@
-import './data.js';
-import './img.js';
-import './util.js';
-import './validator.js';
-import './controller.js';
-import { imgIndex } from './img.js';
+import { getData } from './api.js';
+import { serverError } from './alerts.js';
+import {renderPhotos} from './render-photos.js'
+import './editor.js';
+import { showSortButtons, onSortButtonClick } from './sort-photo.js';
 
-imgIndex();
+getData((photos) => {
+  renderPhotos(photos);
+  showSortButtons();
+  onSortButtonClick(photos);
+}, serverError);
+
